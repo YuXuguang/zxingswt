@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Sun Jul 13 20:13:04 CST 2014
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=zxingswt_fat.jar
+manifest.mergeall=true
+manifest.mainclass=com.xg.web.Main
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=zxing.jar
+excludes=
+includes=

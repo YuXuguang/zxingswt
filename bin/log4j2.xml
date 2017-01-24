@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ERROR">
+ <appenders> 
+    <File name="Console" fileName="log/log.log" append="false">    
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n"/>    
+    </File>
+    <File name="success" fileName="log/success.log" append="false">    
+      <PatternLayout pattern="%msg%xEx%n"/>    
+    </File>
+    <File name="failed" fileName="log/failed.log" append="false">    
+      <PatternLayout pattern="%msg%xEx%n"/>    
+    </File>
+    <File name="other" fileName="log/other.log" append="false">    
+      <PatternLayout pattern="%msg%xEx%n"/>    
+    </File>
+  </appenders> 
+  
+  <Loggers>
+  	<logger name="success" level="info" additivity="false">  
+      <appender-ref ref="success"/>  
+    </logger>
+  	<logger name="failed" level="info" additivity="false">  
+      <appender-ref ref="failed"/>  
+    </logger>
+  	<logger name="other" level="info" additivity="false">  
+      <appender-ref ref="other"/>  
+    </logger>
+    <Root level="info">
+      <AppenderRef ref="Console"/>
+    </Root>
+  </Loggers>
+</Configuration>
